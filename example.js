@@ -15,7 +15,7 @@
 */
 
 /** @fileoverview Example of how to use the bookmark bubble. */
-
+localStorage.clear();
 window.addEventListener('load', function() {
   window.setTimeout(function() {
     var bubble = new google.bookmarkbubble.Bubble();
