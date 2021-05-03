@@ -1,0 +1,34 @@
+body {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.section {
+    height: 480px;
+    border: 1px solid #ff6a00;
+    width: 70%;
+}
+
+.PopupButton {
+    text-align: center;
+    color: #FFFFFF;
+    display: table-cell;
+    vertical-align: middle;
+    width: 160px;
+    height: 48px;
+    background-color: #2673eb;
+    border-radius: 25px 25px 25px 25px / 25px 25px 25px 25px;
+    cursor: pointer;
+}
+
+.popup_section {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: absolute;
+    ;
+    background-color: #2673eb;
+    color: #FFFFFF;
+    width: 100%;
+    min-height: 800px;
+    height: 100%;
+}
