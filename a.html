@@ -1,1 +1,26 @@
-<a>移動先</a>
+<a>a</a>
+<script>
+  $(function(){
+  if(document.URL.match(/\?/)) { // URLパラメータが存在する場合処理を行う
+    // URLを取得し、「?」で分割
+    var url = location.href;
+    var urlArray = url.split('?');
+    // パラメータ用の配列を用意
+    var paramArray = [];
+    var paramData = urlArray[1].split('=');
+    // パラメータのキーをparamArrayにpushし、
+    // parramArray[(キー名)]にパラメータ値をセット
+    paramArray.push(paramData[0]);
+    paramArray[paramData[0]] = paramData[1];
+    // 値を取得
+    var text = decodeURI(paramArray['key']);
+    if(text!='undefined') { // パラメータの値が存在する場合に処理を行う
+      // 対象のテキストボックスに値を設定後、画面から非表示にする
+      //（input自体を削除してしまうと入力された値の情報が送信されないため、あくまで見かけ上のみ表示を消しておく）
+      $('#prodName').val(text);
+      $('#prodName').prop('type', 'hidden');
+      // 値が入力済みかつdisabled状態のテキストボックスを表示させる
+      $('#prodName').parent().append('<iframe src="'+text+'" width="100%" height="100%"></iframe>');
+    }
+  }
+});</script>
