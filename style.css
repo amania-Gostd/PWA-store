@@ -9,18 +9,6 @@ body {
     width: 70%;
 }
 
-.PopupButton {
-    text-align: center;
-    color: #FFFFFF;
-    display: table-cell;
-    vertical-align: middle;
-    width: 160px;
-    height: 48px;
-    background-color: #2673eb;
-    border-radius: 25px 25px 25px 25px / 25px 25px 25px 25px;
-    cursor: pointer;
-}
-
 .popup_section {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
